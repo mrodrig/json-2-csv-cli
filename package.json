@@ -1,0 +1,42 @@
+{
+    "author": {
+        "name": "Mike Rodrigues",
+        "email": "rodrigues.mi@husky.neu.edu"
+    },
+    "name": "json-2-csv-cli",
+    "description": "",
+    "version": "3.5.8",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrodrig/json-2-csv-cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mrodrig/json-2-csv-cli/issues"
+    },
+    "bin": {
+        "json2csv": "./bin/json2csv.js",
+        "csv2json": "./bin/csv2json.js"
+    },
+    "keywords": [
+        "json",
+        "to",
+        "csv",
+        "converter",
+        "export",
+        "json2csv",
+        "csv2json",
+        "parse",
+        "parser",
+        "json-2-csv",
+        "csv-2-json",
+        "cli"
+    ],
+    "dependencies": {
+        "commander": "2.20.0",
+        "json-2-csv": "*"
+    },
+    "engines": {
+        "node": ">= 8"
+    },
+    "license": "MIT"
+}
