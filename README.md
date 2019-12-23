@@ -13,7 +13,7 @@ This module provides the command line interface functionality for the [json-2-cs
 
 CLI:
 ```bash
-$ npm install json-2-csv-cli
+$ npm install @mrodrig/json-2-csv-cli
 ```
 
 ## Usage

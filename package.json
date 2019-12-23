@@ -3,7 +3,7 @@
         "name": "Mike Rodrigues",
         "email": "rodrigues.mi@husky.neu.edu"
     },
-    "name": "json-2-csv-cli",
+    "name": "@mrodrig/json-2-csv-cli",
     "description": "",
     "version": "3.5.8",
     "repository": {
