@@ -2,7 +2,7 @@
 
 const path = require('path'),
     fs = require('fs'),
-    converter = require('../../../json-2-csv');
+    converter = require('json-2-csv');
 
 module.exports = {
     constructKeysList,
