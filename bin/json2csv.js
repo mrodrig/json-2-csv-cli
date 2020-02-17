@@ -21,6 +21,7 @@ program
     .option('-S, --check-schema', 'Check for schema differences')
     .option('-E, --empty-field-value <value>', 'Empty field value')
     .option('-A, --expand-array-objects', 'Expand array objects')
+    .option('-U, --unwind-arrays', 'Unwind array values to their own CSV line')
     .option('-k, --keys [keys]', 'Keys of documents to convert to CSV', utils.constructKeysList, undefined)
     .parse(process.argv);
 
@@ -40,6 +41,7 @@ Promise.resolve({
         trimFieldValues: Boolean(program.trimFields),
         checkSchemaDifferences: Boolean(program.checkSchema),
         expandArrayObjects: Boolean(program.expandArrayObjects),
+        unwindArrays: Boolean(program.unwindArrays),
         emptyFieldValue: program.emptyFieldValue,
         keys: program.keys
     }
