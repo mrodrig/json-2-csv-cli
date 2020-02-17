@@ -34,6 +34,7 @@ Options:
   -S, --check-schema               Check for schema differences
   -E, --empty-field-value <value>  Empty field value
   -A, --expand-array-objects       Expand array objects
+  -U, --unwind-arrays              Unwind array values to their own CSV line
   -k, --keys [keys]                Keys of documents to convert to CSV
   -h, --help                       output usage information
 ```
