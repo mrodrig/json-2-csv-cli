@@ -5,7 +5,7 @@
     },
     "name": "@mrodrig/json-2-csv-cli",
     "description": "",
-    "version": "3.5.9",
+    "version": "3.6.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/mrodrig/json-2-csv-cli.git"
