@@ -4,8 +4,8 @@
         "email": "rodrigues.mi@husky.neu.edu"
     },
     "name": "@mrodrig/json-2-csv-cli",
-    "description": "",
-    "version": "3.6.1",
+    "description": "CLI for the json-2-csv package",
+    "version": "3.7.3",
     "repository": {
         "type": "git",
         "url": "https://github.com/mrodrig/json-2-csv-cli.git"
@@ -33,7 +33,7 @@
     ],
     "dependencies": {
         "commander": "2.20.0",
-        "json-2-csv": "*"
+        "json-2-csv": "^3.7.3"
     },
     "engines": {
         "node": ">= 8"
