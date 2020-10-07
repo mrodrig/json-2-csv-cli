@@ -1,11 +1,8 @@
 {
-    "author": {
-        "name": "Mike Rodrigues",
-        "email": "rodrigues.mi@husky.neu.edu"
-    },
+    "author": "mrodrig",
     "name": "@mrodrig/json-2-csv-cli",
     "description": "CLI for the json-2-csv package",
-    "version": "3.7.3",
+    "version": "3.7.8",
     "repository": {
         "type": "git",
         "url": "https://github.com/mrodrig/json-2-csv-cli.git"
@@ -33,7 +30,7 @@
     ],
     "dependencies": {
         "commander": "2.20.0",
-        "json-2-csv": "^3.7.3"
+        "json-2-csv": "^3.7.8"
     },
     "engines": {
         "node": ">= 8"
