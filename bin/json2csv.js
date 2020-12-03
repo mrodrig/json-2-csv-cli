@@ -2,7 +2,7 @@
 
 'use strict';
 
-const pkg = require('json-2-csv'),
+const pkg = require('../package.json'),
     utils = require('./utils/utils'),
     program = require('commander');
 
