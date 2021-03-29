@@ -56,3 +56,16 @@ Options:
   -k, --keys [keys]        Keys of documents to convert to CSV
   -h, --help               output usage information
 ```
+
+### Memory
+To increase the allowed heap size, set `max_old_space_size` in `NODE_OPTIONS`.
+
+Linux/macOs:
+```bash
+export NODE_OPTIONS=--max_old_space_size=4096
+```
+
+Windows:
+```cmd
+set NODE_OPTIONS=--max_old_space_size=4096
+```
