@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path'),
+    util = require('util'),
     fs = require('fs'),
     converter = require('json-2-csv');
 
@@ -79,7 +80,7 @@ function processOutput(params) {
         return writeToFile(params.output, JSON.stringify(params.outputData, null, 4));
     }
     // Otherwise, no output was specified so just send it to stdout via the console
-    console.log(params.outputData); // eslint-disable-line no-console
+    console.log(util.inspect(params.output, { maxArrayLength: null })); // eslint-disable-line no-console
 }
 
 function constructKeysList(key, keys) {
