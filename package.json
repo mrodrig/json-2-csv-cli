@@ -2,7 +2,7 @@
     "author": "mrodrig",
     "name": "@mrodrig/json-2-csv-cli",
     "description": "CLI for the json-2-csv package",
-    "version": "3.16.0",
+    "version": "4.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/mrodrig/json-2-csv-cli.git"
@@ -30,7 +30,7 @@
     ],
     "dependencies": {
         "commander": "8.3.0",
-        "json-2-csv": "^3.16.0"
+        "json-2-csv": "^3.17.0"
     },
     "engines": {
         "node": ">= 12"
