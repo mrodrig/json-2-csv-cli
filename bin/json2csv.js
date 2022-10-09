@@ -4,7 +4,7 @@
 
 const pkg = require('../package.json'),
     utils = require('./utils/utils'),
-    program = require('commander');
+    { program } = require('commander');
 
 program
     .version(pkg.version)
@@ -25,25 +25,27 @@ program
     .option('-k, --keys [keys]', 'Keys of documents to convert to CSV', utils.constructKeysList, undefined)
     .parse(process.argv);
 
+const options = program.opts();
+
 Promise.resolve({
     json: utils.readInputFile(program.args && program.args.length && program.args[0]),
-    output: program.output,
+    output: options.output,
     options: {
         delimiter: {
-            field: program.field,
-            wrap: program.wrap,
-            eol: program.eol
+            field: options.field,
+            wrap: options.wrap,
+            eol: options.eol
         },
-        excelBOM: Boolean(program.excelBom),
-        prependHeader: !program.withoutHeader,
-        sortHeader: Boolean(program.sortHeader),
-        trimHeaderFields: Boolean(program.trimHeader),
-        trimFieldValues: Boolean(program.trimFields),
-        checkSchemaDifferences: Boolean(program.checkSchema),
-        expandArrayObjects: Boolean(program.expandArrayObjects),
-        unwindArrays: Boolean(program.unwindArrays),
-        emptyFieldValue: program.emptyFieldValue,
-        keys: program.keys
+        excelBOM: Boolean(options.excelBom),
+        prependHeader: !options.withoutHeader,
+        sortHeader: Boolean(options.sortHeader),
+        trimHeaderFields: Boolean(options.trimHeader),
+        trimFieldValues: Boolean(options.trimFields),
+        checkSchemaDifferences: Boolean(options.checkSchema),
+        expandArrayObjects: Boolean(options.expandArrayObjects),
+        unwindArrays: Boolean(options.unwindArrays),
+        emptyFieldValue: options.emptyFieldValue,
+        keys: options.keys
     }
 })
     .then(utils.parseInputFiles)
