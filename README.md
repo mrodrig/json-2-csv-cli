@@ -45,7 +45,6 @@ Usage: csv2json <csvFile> [options]
 
 Options:
   -V, --version            output the version number
-  -c, --csv <csv>          Path of json file to be converted
   -o, --output [output]    Path of output file. If not provided, then stdout will be used
   -f, --field <delimiter>  Optional field delimiter
   -w, --wrap <delimiter>   Optional wrap delimiter
