@@ -30,7 +30,7 @@
     ],
     "dependencies": {
         "commander": "9.4.1",
-        "json-2-csv": "^3.17.2"
+        "json-2-csv": "3.20.0"
     },
     "engines": {
         "node": ">= 12"
