@@ -78,8 +78,14 @@ function processOutput(params) {
         // Pretty print the output when converting from CSV to JSON
         return writeToFile(params.output, JSON.stringify(params.outputData, null, 4));
     }
+
     // Otherwise, no output specified, convert to valid JSON string, send to stdout via the console
-    console.log(JSON.stringify(params.outputData, null, 2)); // eslint-disable-line no-console
+    if (typeof params.outputData === 'object') { // JSON
+        console.log(JSON.stringify(params.outputData, null, 2)); // eslint-disable-line no-console
+    } else { // CSV
+        console.log(params.outputData);
+    }
+    
 }
 
 function constructKeysList(key, keys) {
