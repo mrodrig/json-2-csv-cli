@@ -36,10 +36,10 @@ function parseInputFiles(params) {
 function determineConverter(params) {
     if (params.json) {
         params.conversion = 'json2csv';
-        params.converter = converter.json2csvAsync;
+        params.converter = converter.json2csv;
     } else if (params.csv) {
         params.conversion = 'csv2json';
-        params.converter = converter.csv2jsonAsync;
+        params.converter = converter.csv2json;
     } else {
         return Promise.reject('No data provided for conversion');
     }
@@ -50,17 +50,13 @@ function determineConverter(params) {
 function performConversion(params) {
     switch (params.conversion) {
         case 'json2csv':
-            return params.converter(params.json, params.options)
-                .then((outputData) => {
-                    params.outputData = outputData;
-                    return params;
-                });
+            const csv = params.converter(params.json, params.options);
+            params.outputData = csv;
+            return params;
         case 'csv2json':
-            return params.converter(params.csv, params.options)
-                .then((outputData) => {
-                    params.outputData = outputData;
-                    return params;
-                });
+            const json = params.converter(params.csv, params.options);
+            params.outputData = json;
+            return params;
         default:
             return Promise.reject('Invalid conversion specified.');
     }
