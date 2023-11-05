@@ -3,10 +3,8 @@
 
 This module provides the command line interface functionality for the [json-2-csv](https://www.npmjs.org/package/json-2-csv) package.
 
-[![Dependencies](https://img.shields.io/david/mrodrig/json-2-csv-cli.svg)](https://www.npmjs.org/package/@mrodrig/json-2-csv-cli)
-[![Downloads](http://img.shields.io/npm/dm/@mrodrig/json-2-csv-cli.svg)](https://www.npmjs.org/package/@mrodrig/json-2-csv-cli)
 [![NPM version](https://img.shields.io/npm/v/@mrodrig/json-2-csv-cli.svg)](https://www.npmjs.org/package/@mrodrig/json-2-csv-cli)
-[![Known Vulnerabilities](https://snyk.io/test/npm/@mrodrig/json-2-csv-cli/badge.svg)](https://snyk.io/test/npm/@mrodrig/json-2-csv-cli)
+[![Downloads](https://img.shields.io/npm/dm/@mrodrig/json-2-csv-cli.svg)](https://www.npmjs.org/package/@mrodrig/json-2-csv-cli)
 
 ## Installation
 
