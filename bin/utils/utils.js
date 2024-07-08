@@ -84,12 +84,6 @@ function processOutput(params) {
     
 }
 
-function constructKeysList(key, keys) {
-    // Initialize as empty array, if undefined at start
-    if (!keys) {
-        keys = [];
-    }
-
-    keys.push(key);
-    return keys;
+function constructKeysList(keys) {
+    return keys.split(',');
 }
