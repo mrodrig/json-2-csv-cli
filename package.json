@@ -2,7 +2,7 @@
     "author": "mrodrig",
     "name": "@mrodrig/json-2-csv-cli",
     "description": "CLI for the json-2-csv package",
-    "version": "5.5.4",
+    "version": "5.5.5",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mrodrig/json-2-csv-cli.git"
