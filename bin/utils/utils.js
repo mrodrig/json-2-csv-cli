@@ -81,9 +81,10 @@ function processOutput(params) {
     } else { // CSV
         console.log(params.outputData);
     }
-    
+
 }
 
 function constructKeysList(keys) {
+    if (!Array.isArray(keys)) return keys;
     return keys.split(',');
 }
