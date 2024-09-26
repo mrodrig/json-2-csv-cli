@@ -58,6 +58,8 @@ Arguments:
 Options:
   -V, --version                output the version number
   -o, --output [output]        Path of output file. If not provided, then stdout will be used
+  -t, --header-fields          Specify the fields names in place a header line in the CSV itself
+  -k, --keys [keys]            Keys of documents to convert to JSON
   -f, --field <delimiter>      Field delimiter
   -w, --wrap <delimiter>       Wrap delimiter
   -e, --eol <delimiter>        End of Line delimiter
@@ -65,9 +67,7 @@ Options:
   -p, --prevent-csv-injection  Prevent CSV Injection
   -F, --trim-fields            Trim field values
   -H, --trim-header            Trim header fields
-  -h, --header-fields          Specify the fields names in place a header line in the CSV itself
-  -k, --keys [keys]            Keys of documents to convert to CSV
-  --help                       display help for command
+  -h, --help                   display help for command
 ```
 
 ### Memory
